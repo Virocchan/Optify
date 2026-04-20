@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Optify — AI-Powered Glaucoma Diagnosis
 
 A clinical-grade AI diagnostic workspace for ophthalmologists, combining a CNN-powered glaucoma classifier with explainability (Grad-CAM) and a Gemini-powered chat layer for clinical reasoning.
@@ -256,3 +257,7 @@ Private - All rights reserved
 ## Support
 
 For issues or questions, please refer to the project documentation or contact the development team.
+=======
+# Optify
+Upload a retinal fundus image and Optify's CNN model delivers a confidence-graded diagnosis in seconds — analyzing the optic disc, cup-to-disc ratio, and key clinical markers. Every result comes with a Grad-CAM heatmap, feature importance breakdown, and a Gemini 2.0 chat layer that explains the decision in plain language.
+>>>>>>> eef2bbb5f4ebddd0b1063e6790ca0ec365f106f6
