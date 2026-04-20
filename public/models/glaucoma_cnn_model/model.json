@@ -1,0 +1,96 @@
+{
+  "modelTopology": {
+    "class_name": "Sequential",
+    "config": {
+      "name": "glaucoma_cnn",
+      "layers": [
+        {
+          "class_name": "Conv2D",
+          "config": {
+            "filters": 32,
+            "kernel_size": [3, 3],
+            "strides": [1, 1],
+            "padding": "valid",
+            "data_format": "channels_last",
+            "dilation_rate": [1, 1],
+            "activation": "relu",
+            "use_bias": true,
+            "input_shape": [224, 224, 3]
+          }
+        },
+        {
+          "class_name": "MaxPooling2D",
+          "config": {
+            "pool_size": [2, 2],
+            "strides": [2, 2],
+            "padding": "valid"
+          }
+        },
+        {
+          "class_name": "Conv2D",
+          "config": {
+            "filters": 64,
+            "kernel_size": [3, 3],
+            "strides": [1, 1],
+            "padding": "valid",
+            "activation": "relu"
+          }
+        },
+        {
+          "class_name": "MaxPooling2D",
+          "config": {
+            "pool_size": [2, 2],
+            "strides": [2, 2]
+          }
+        },
+        {
+          "class_name": "Conv2D",
+          "config": {
+            "filters": 128,
+            "kernel_size": [3, 3],
+            "strides": [1, 1],
+            "padding": "valid",
+            "activation": "relu"
+          }
+        },
+        {
+          "class_name": "MaxPooling2D",
+          "config": {
+            "pool_size": [2, 2],
+            "strides": [2, 2]
+          }
+        },
+        {
+          "class_name": "Flatten",
+          "config": {}
+        },
+        {
+          "class_name": "Dense",
+          "config": {
+            "units": 128,
+            "activation": "relu"
+          }
+        },
+        {
+          "class_name": "Dropout",
+          "config": {
+            "rate": 0.5
+          }
+        },
+        {
+          "class_name": "Dense",
+          "config": {
+            "units": 1,
+            "activation": "sigmoid"
+          }
+        }
+      ]
+    },
+    "keras_version": "2.10.0",
+    "backend": "tensorflow"
+  },
+  "format": "layers-model",
+  "generatedBy": "TensorFlow.js Converter",
+  "convertedBy": "Manual creation placeholder - replace with actual converted model",
+  "user": "Replace this file with output from tensorflowjs_converter"
+}
